@@ -4,8 +4,8 @@ import pandas as pd
 from PIL import Image
 import base64
 
-Good = open(r"C:\Users\camra\env\SQ\Good.gif", "rb")
-Bad = open(r"C:\Users\camra\env\SQ\Bad.gif", "rb")
+Good = open(r"GIF Path", "rb")
+Bad = open(r"GIF Path", "rb")
 contents = Good.read()
 contents2= Bad.read()
 
@@ -14,7 +14,7 @@ data_url2 = base64.b64encode(contents2).decode("utf-8")
 Good.close()
 Bad.close()
 
-List= pd.read_csv(r'C:\Users\camra\env\SQ\Words.csv',encoding = 'unicode_escape')
+List= pd.read_csv(r'Dataset Path',encoding = 'unicode_escape')
 
 Words=List.Wrong.to_list()
 
